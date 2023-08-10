@@ -1,8 +1,11 @@
 <script>
+  // @ts-ignore
   import Counter from './lib/Counter.svelte'
   let name = "Karina";
+  // @ts-ignore
   function showTitle() {
     const imgTitle = document.querySelector('.img-title');
+    // @ts-ignore
     imgTitle.style.opacity = '1';
   }
 </script>
@@ -13,7 +16,7 @@
       <img src="./src/img/flowers.jpg" alt="Flowers" />
       <div class="img-overlay">
         <p class="img-title">Orquídea</p>
-        <a href="https://es.wikihow.com/cuidar-orquídeas" target="_blank" rel="noopener noreferrer" class="img-link">Ir a otra página</a>
+        <a href="https://es.wikihow.com/cuidar-orquídeas" target="_blank" rel="noopener noreferrer" class="img-link">Ir a la web</a>
       </div>
     </div>
     
@@ -50,6 +53,6 @@
     filter: drop-shadow(0 0 2em #ff3e00aa);
   }*/
   .read-the-docs {
-    color: #888;
+    color: #888888;
   }
 </style>

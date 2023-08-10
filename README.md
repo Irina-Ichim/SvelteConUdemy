@@ -1,47 +1,30 @@
-# Svelte + Vite
+# Svelte + Vite, practicando con Udemy
 
-This template should help get you started developing with Svelte in Vite.
+Este es un proyecto de prueba creado utilizando Svelte y Vite, dos tecnologías modernas para el desarrollo web. El proyecto consta de una página web simple con efectos de estilo y algunas interacciones.
 
-## Recommended IDE Setup
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+## Características
 
-## Need an official Svelte framework?
+Presenta una imagen de una orquídea con un efecto de superposición al pasar el cursor sobre ella.
+Muestra un título y un enlace a una página web relacionada con el contenido de la imagen.
+Utiliza estilos y animaciones CSS para mejorar la apariencia visual.
+Utiliza Svelte para la interacción de nombres dinámicos y Vite para la construcción y ejecución rápida del proyecto.
+## Instrucciones de Uso
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+1. Clona este repositorio en tu computadora:
 
-## Technical considerations
+git clone https://github.com/Irina-Ichim/SvelteConUdemy.git
 
-**Why use this over SvelteKit?**
+2. Navega a la carpeta del proyecto:
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+3. Instala las dependencias utilizando npm: 
 
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+npm install
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+## Cómo Ejecutar
+Ejecuta el servidor de desarrollo utilizando npm: 
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+npm run dev
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+Abre tu navegador web y visita la dirección http://localhost:8080
 
-**Why include `.vscode/extensions.json`?**
-
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
-
-**Why enable `checkJs` in the JS template?**
-
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
-
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
